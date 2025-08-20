@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynx</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Part -->
+    <header id="home">
+        <div class="header-content">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/meyna-anjar-nilawati" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:meynaanjarnilawati@mail.ugm.ac.id">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="https://instagram.com/youcancallme.mey" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Meynaan" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="text">
+                <p class="hello">Hello, I am</p>
+                <h1 class="name">Meyna Anjar Nilawati</h1>
+                <p class="job">Geographic Information System | Gadjah Mada University</p>
+            </div>
+
+            <a href="CVKU.pdf" target="_blank" class="cv-btn">
+                <i class="fa-solid fa-file-pdf"></i>
+                View Resume
+            </a>
+        </div>
+    </header>
+
+    <nav class="pc">
+        <div class="flex">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+        </div>
+
+        <div class="img-container">
+            <img src="images/profile.jpeg" alt="" decoding="async" loading="lazy">
+        </div>
+        <div class="img-replace hidden">
+            <p>Meyna Anjar</p>
+            <p class="sub">GIS | UGM</p>
+        </div>
+
+        <div class="flex">
+            <a href="#portfolio">Portfolio</a>
+
+            <!-- Dropdown start -->
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio Groups ▾</button>
+                <div class="dropdown-content">
+                    <a href="#SDP">Spatial Processing</a>
+                    <a href="#AS">Areal Survei</a>
+                    <a href="#GNSS">GNSS</a>
+                    <a href="#IUT">Land Measurement</a>
+                    <a href="#Pemrograman">Programming</a>
+                </div>
+            </div>
+            <!-- Dropdown end -->
+
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <!-- Navbar For Mobile Part -->
+    <nav class="mobile">
+        <div class="bars">
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mob-nav hidden" id="mob-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+
+            <!-- Dropdown Mobile -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropbtn">Portfolio Groups ▾</button>
+                <div class="mobile-dropdown-content hidden">
+                    <a href="#SDP">Spatial Processing</a>
+                    <a href="#AS">Areal Survei</a>
+                    <a href="#GNSS">GNSS</a>
+                    <a href="#IUT">Land Measurement</a>
+                    <a href="#Pemrograman">Programming</a>
+
+                </div>
+            </div>
+            <!-- End Dropdown Mobile -->
+
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <script>
+        // Toggle nav utama
+        const mobileBtn = document.getElementById('mobile-btn');
+        const mobNav = document.getElementById('mob-nav');
+        mobileBtn.addEventListener('click', () => {
+            mobNav.classList.toggle('hidden');
+        });
+
+        // Toggle dropdown di mobile
+        const mobileDropBtn = document.querySelector('.mobile-dropbtn');
+        const mobileDropContent = document.querySelector('.mobile-dropdown-content');
+        mobileDropBtn.addEventListener('click', () => {
+            mobileDropContent.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+
+
+    <!-- About Part  -->
+    <section class="summary offset" id="about">
+        <div class="me br">
+            <p class="title">
+                Who am I ?
+            </p>
+            <p class="desc">
+                Geographic Information Systems Student
+            </p>
+            <p class="sub">
+                Fifth-semester Geographic Information Systems student at Universitas Gadjah Mada with hands-on
+                experience in land surveying instruments (Automatic Level Waterpass, Theodolite, Total Station) and
+                proficiency in GIS software (ArcGIS, QGIS, RStudio, SeaDAS, Ocean Data View). Possesses foundational
+                programming skills in JavaScript, HTML/CSS, PHP, R, SQL, and Python for data processing, application
+                development, and web design.
+            </p>
+
+        </div>
+
+        <div class="personal-info br">
+            <p class="title">
+                Personal Info
+            </p>
+
+            <div class="info">
+                <p>Birthdate: <span class="sub"> 26/05/2004</span></p>
+                <p>Email: <span class="sub"> meynaanjarnilawati@mail.ugm.ac.id</span></p>
+                <p>Phone: <span class="sub"> 081226576820</span></p>
+                <p>Address: <span class="sub"> Bantul, Daerah Istimewa Yogyakarta, Indonesia.</span></p>
+            </div>
+
+            <div class="icons prime-color">
+                <a href="https://www.linkedin.com/in/meyna-anjar-nilawati" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:meynaanjarnilawati@mail.ugm.ac.id">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="https://instagram.com/youcancallme.mey" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Meynaan" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="expertise br">
+            <p class="title">My Expertise</p>
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <div class="exp-text">
+                    <p>Geospatial Engineering</p>
+                    <p class="sub">Performing general technical work related to geospatial matters</p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <div class="exp-text">
+                    <p>Surveying and Mapping</p>
+                    <p class="sub">land measurement, land mapping, etc.</p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <div class="exp-text">
+                    <p>Information Technology & Programming</p>
+                    <p class="sub">Website programming, android applications, and desktop applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Part -->
+    <section class="res-container offset" id="resume">
+        <p class="head"><span class="prime-color">My</span> Resume</p>
+        <div class="resume">
+            <div class="res-exp">
+                <p class="title">Education</p>
+                <div>
+                    <p class="date">
+                        2022 - present
+                    </p>
+                    <p class="sub-title">
+                        Bachelor of Geographic Information Systems
+                    </p>
+                    <p class="sub">
+                        I have experience in creating both general and thematic maps, as well as conducting spatial
+                        analyses
+                        such as land cover change analysis. In addition, I have developed WebGIS platforms, websites,
+                        and mobile applications to support spatial data visualization and accessibility.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="date">
+                        2019 - 2022
+                    </p>
+                    <p class="sub-title">
+                        Multimedia
+                    </p>
+                    <p class="sub">
+                        My experience includes creating diverse design projects and producing short films that enhance
+                        my
+                        creative and storytelling abilities. Additionally, I have studied the fundamentals of
+                        programming,
+                        allowing me to integrate technical skills with creative work.
+                    </p>
+                </div>
+
+                <div class="last">
+                    <p class="date">
+                        2016 - 2019
+                    </p>
+                    <p class="sub-title">
+                        Junior High School
+                    </p>
+                    <p class="sub">
+                        I am actively involved in different activities at school and outside, including studying,
+                        participating in group projects, and exploring new interests.
+                    </p>
+                </div>
+            </div>
+
+            <div class="res-exp">
+                <p class="title">Organizational and Committee Experience</p>
+                <div>
+                    <p class="date">
+                        2023 - 2025
+                    </p>
+                    <p class="sub-title">
+                        Student Association of the Department of Geological Engineering (Media and Information Division
+                        Staff)
+                    </p>
+                    <p class="sub">
+                        I contributed by documenting various organizational events and activities, and took part
+                        in managing as well as distributing official information across different communication
+                        platforms to reach wider audiences.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="date">
+                        2024
+                    </p>
+                    <p class="sub-title">
+                        Smakadano Education Expo #10 (Event Division Coordinator)
+                    </p>
+                    <p class="sub">
+                        I took the lead in planning and scheduling events while supervising operations, which ensured
+                        efficient workflows
+                        and the successful execution of events with maximum participation.
+                    </p>
+                </div>
+
+                <div class="last">
+                    <p class="date">
+                        2023
+                    </p>
+                    <p class="sub-title">
+                        PPSMB Permadani (Design, Decoration, and Documentation Division Staff)
+                    </p>
+                    <p class="sub">
+                        My responsibilities included capturing and archiving event documentation, as well as assisting
+                        in the dissemination
+                        of information and the preparation of visual presentations to ensure clarity and accessibility
+                        for all members.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-lang">
+                <div class="skills">
+
+                    <div class="donut" style="--percent:90;">
+                        <div class="percent">90%</div>
+                        <span>HTML & CSS</span>
+                    </div>
+                    <div class="donut" style="--percent:75;">
+                        <div class="percent">75%</div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="donut" style="--percent:60;">
+                        <div class="percent">60%</div>
+                        <span>PHP</span>
+                    </div>
+                    <div class="donut" style="--percent:70;">
+                        <div class="percent">70%</div>
+                        <span>SQL</span>
+                    </div>
+
+                </div>
+                <div>
+                    <p class="title">Languages</p>
+                    <p>Indonesia (Advanced)</p>
+
+                    <p>English (Upper Intermediate)</p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Available Part -->
+    <section class="available">
+        <p>
+            I'm ready for an internship
+        </p>
+        <a href="mailto:meynaanjarnilawati@mail.ugm.ac.id">
+            <button class="">
+                Hire Me
+            </button>
+        </a>
+    </section>
+
+    <!-- Portfolio Part -->
+    <section class="porto-container offset" id="portfolio">
+        <p class="head"><span class="prime-color">My</span> Portfolio</p>
+        <p class="sub-head" id="SDP">Spatial Data Processing and Analysis</p>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/tentatif.png" alt="Peta 1">
+                    <div class="description">Performing land cover interpretation on Landsat band 2-5 images using
+                        digital processing. Focusing on the spectral information contained in the images to determine
+                        the land cover in parts of Semarang City. Digital interpretation is performed by utilizing
+                        training sample areas for each existing land cover.</div>
+                </div>
+                <!-- Peta 2 -->
+                <div class="slide">
+                    <img src="images/CVD.png" alt="Peta 2">
+                    <div class="description">Development of an interactive map that generates a global distribution of
+                        COVID-19 cases. This model displays circles that indicate the intensity of cases. The
+                        development of the interactive map utilizes Jupyter Notebook to search for data and analyze the
+                        spread of COVID-19.</div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/OBIA.png" alt="Peta 3">
+                    <div class="description">Performing Object Base Image Analysis on Landsat 8 Collection
+                        2 surface reflectance tier 1 data from 2022 using cloud computing or Google Earth Engine. The
+                        OBIA process will go through image segmentation, where each segment will have a different value
+                        from the other segments.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/Peta.png" alt="Peta 3">
+                    <div class="description">Creation of layout and visualization of thematic maps in accordance with
+                        national standards for the Bitung City area. The presentation standards referred to are the
+                        rules for assigning symbols on maps and the layout of maps. The standardization of presentation
+                        on thematic maps aims to standardize all thematic maps that are created.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/CO2.png" alt="Peta 3">
+                    <div class="description">Developing a data visualization dashboard using Tableau to analyze global
+                        carbon dioxide (CO2) emissions. This project visualizes spatial patterns and temporal trends in
+                        CO2 emissions, providing insights into global environmental challenges. CO2 emissions data is
+                        visualized in a variety of forms and displays.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/popular.png" alt="Peta 3">
+                    <div class="description">Creating popular maps based on thematic data on rainfall and clean water
+                        distribution in Bantul Regency. Popular maps emphasize visual appeal and a more attractive
+                        layout of map elements. Rainfall and clean water distribution maps are created using the IDW
+                        (Inverse Distance Weighting) method, which is a simple method that works by considering the
+                        distance to the study location, where the point with the closest distance will have the highest
+                        value.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/mangrove.png" alt="Peta 3">
+                    <div class="description">Analyzing changes in mangrove vegetation areas from 2019 to 2023 using the
+                        Mangrove Vegetation Index (MVI). This index utilizes NIR, SWIR, and red channels to analyze
+                        mangrove coverage. The analysis was conducted using Google Earth Engine to process Sentinel-2
+                        imagery from 2019 and
+                        2023.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/P4.png" alt="Peta 3">
+                    <div class="description">Modeling the potential of pelagic fish catch zones by utilizing MODIS Lv.
+                        3B imagery in the NRI 571 WPP area. Modeling was carried out by analyzing chlorophyll
+                        concentration and sea surface temperature data to determine which areas have high and low
+                        potential for pelagic fish catches.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/ALL.png" alt="Peta 3">
+                    <div class="description">Analyzing land and vegetation changes in parts of the Special Region of
+                        Yogyakarta Province using cloud computing or Google Earth Engine. The analysis was conducted by
+                        comparing Landsat 8 Collection 2 Surface Reflectance Tier 1 imagery from 2014 and 2022. The
+                        analysis produced a change map marked with colors indicating vegetation changes, land changes,
+                        or no changes.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/Tanah1.png" alt="Peta 3">
+                    <div class="description">Analyzing land changes in parts of the Special Region of Yogyakarta
+                        Province using cloud computing or Google Earth Engine. The analysis was conducted by comparing
+                        Landsat 8 Collection 2 Surface Reflectance Tier 1 imagery from 2014 and 2022. The analysis
+                        produced a map showing the extent of land changes, indicated by color.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        </div>
+
+        <p class="sub-head" id="AS">Areal Survei</p>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/ortho.png" alt="Peta 1">
+                    <div class="description">Processing aerial photo tiles of the UGM vocational school area using
+                        ground control points obtained from GNSS-Geodetic measurements. Using Agysoft Metashape
+                        Professional, the processing produced better aerial photos that corresponded to the original
+                        coordinates on the ground.</div>
+                </div>
+                <!-- Peta 2 -->
+                <div class="slide">
+                    <img src="images/DEM.png" alt="Peta 2">
+                    <div class="description">Processing aerial photo data using Agysoft Metashape Professional into DEM
+                        (Digital Elevation Model) data. DEM data will represent the elevation of an area in meters or
+                        feet. This data shows the elevation of the area around the UGM vocational school campus.</div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/DSM.png" alt="Peta 3">
+                    <div class="description">Processing LiDAR (Light Detection and Ranging) data to generate DSM
+                        (Digital Surface Model) data for part of the Special Region of Yogyakarta Province. DSM (Digital
+                        Surface Model) is data that contains ground elevation and the cover or objects above it. DSM
+                        data will contain the elevation of vegetation, buildings, and so on.
+                    </div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/DTM.png" alt="Peta 3">
+                    <div class="description">Processing LiDAR (Light Detection and Ranging) data to generate DTM
+                        (Digital Terrain Model) data for part of the Special Region of Yogyakarta Province. DTM (Digital
+                        Terrain Model) is elevation data that is not affected by the elevation of land cover above it,
+                        such as vegetation and other elements.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        </div>
+
+
+
+        <p class="sub-head" id="GNSS">GNSS</p>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/titik.png" alt="Peta 1">
+                    <div class="description">Measurements are taken using GNSS Geodetic with the RTK CORS method. This
+                        method involves two things, namely a reference station or CORS and an RTK receiver used in the
+                        field. The RTK CORS method has a system that utilizes two stations, namely a reference station
+                        (CORS) and an RTK receiver station.</div>
+                </div>
+                <!-- Peta 2 -->
+                <div class="slide">
+                    <img src="images/RTKRadio.png" alt="Peta 2">
+                    <div class="description">Performing measurements using Geodetic GNSS with the RTK RADIO method. RTK
+                        RADIO works by connecting the reference station with the rover. The connection between the
+                        reference station or base and the rover is used to correct the data obtained from the rover. The
+                        measurement method using RTK RADIO is carried out by setting up the GNSS equipment on the JKGN
+                        (National Gravity Control Network).</div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/SA.png" alt="Peta 3">
+                    <div class="description">Performing measurements using Geodetic GNSS with the STATIC method. The
+                        static method works by utilizing signals from existing satellites; the more satellite signals
+                        connected, the better the data obtained. The static method produces better data compared to
+                        other methods, as it requires a considerable amount of time to collect data at a single
+                        location.
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tombol navigasi -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        </div>
+
+
+
+        <p class="sub-head" id="IUT">Land Measurement</p>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/TitikAll.png" alt="Peta 1">
+                    <div class="description">Perform detailed measurements of the situation using a total station. A
+                        total station works by reflecting infrared light from the device toward a prism as a target. The
+                        prism then reflects the light back toward the device. The reflected light is then used to
+                        calculate distance and other measurements.</div>
+                </div>
+                <!-- Peta 2 -->
+                <div class="slide">
+                    <img src="images/KonturAll.png" alt="Peta 2">
+                    <div class="description">Processing detailed measurement data using a total station to create a
+                        contour map of part of the river in the Wisdom Park UGM area. Processing is carried out using
+                        ArcGIS, or more specifically ArcMap.</div>
+                </div>
+                <!-- Peta 3 -->
+                <div class="slide">
+                    <img src="images/DEMAll.png" alt="Peta 3">
+                    <div class="description">Processing detailed measurement data using a total station to create DEM
+                        data for part of the river area in the Wisdom Park UGM area. Processing is carried out using
+                        ArcGIS, or more specifically ArcMap.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        </div>
+
+
+
+        <p class="sub-head" id="Pemrograman">Programming</p>
+
+        <div class="slider">
+            <div class="slides">
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/EKK.png" alt="Peta 1">
+                    <p class="subsub-head">E-KK (Elektronik Kartu Keluarga)</p>
+                    <div class="description">E-KK is an application used to store Family Card data in a specific area.
+                        This application makes it easier for village officials to manage Family Card data digitally.
+                        E-KK provides a list of Family Cards, forms used to add Family Card data, and forms to edit
+                        Family Card contents. In addition, this application can also be used to show the location of the
+                        Family Card owner's residence.<br>
+                        <br>
+                        <a href="https://github.com/Meynaan/React-Native.git" class="btn gradient-green">
+                            🚀 Project
+                        </a>
+
+                        <a href="https://youtube.com/shorts/hVid7uznwXA?feature=shared" class="btn gradient-blue">
+                            🎥 Project Demo
+                        </a>
+                    </div>
+                </div>
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/LD2.png" alt="Peta 1">
+                    <p class="subsub-head">SIWARANG (Destinasi Wisata Kota Semarang)</p>
+                    <div class="description">SIWARANG is a website that contains location points and brief descriptions
+                        of tourist destinations in the city of Semarang. In addition to viewing location points and
+                        brief descriptions, website users can also add new tourist location points in the Semarang
+                        area.<br>
+                        <br>
+                        <a href="https://github.com/Meynaan/PGWL_Responsi.git" class="btn gradient-green">
+                            🚀 Project
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/BW.png" alt="Peta 1">
+                    <p class="subsub-head">WebGIS StoryMap Mengenal Desa Bawukan: Harmoni Alam, Budaya, dan Harapan</p>
+                    <div class="description">ArcGIS StoryMaps is a platform from Esri that is used to combine
+                        interactive maps with text, images, and other media in the form of digital narratives. These
+                        StoryMaps contain brief profiles of Bawukan Village, the village's potential, the village's
+                        administrative area, and the village's MSMEs.<br>
+                        <br>
+                        <a href="https://arcg.is/0W9Sb40" class="btn gradient-green">
+                            🚀 Project
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Peta 1 -->
+                <div class="slide">
+                    <img src="images/BTL.png" alt="Peta 1">
+                    <p class="subsub-head">WebGIS StoryMap Mengenal Desa Bawukan: Harmoni Alam, Budaya, dan Harapan</p>
+                    <div class="description">ArcGIS StoryMaps is a platform from Esri that is used to combine
+                        interactive maps with text, images, and other media in the form of digital narratives. These
+                        StoryMaps contain information about tourist attractions in Bantul Regency. In addition to their
+                        locations, there is also brief information about each tourist attraction.<br>
+                        <br>
+                        <a href="https://arcg.is/rXvPC" class="btn gradient-green">
+                            🚀 Project
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol navigasi -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        </div>
+
+        <script>
+            document.querySelectorAll(".slider").forEach(slider => {
+                const slides = slider.querySelector(".slides");
+                const slideItems = slider.querySelectorAll(".slide");
+                const prevBtn = slider.querySelector(".prev");
+                const nextBtn = slider.querySelector(".next");
+                let index = 0;
+
+                function showSlide(i) {
+                    if (i < 0) index = slideItems.length - 1;
+                    else if (i >= slideItems.length) index = 0;
+                    else index = i;
+                    slides.style.transform = `translateX(${-index * 100}%)`;
+                }
+
+                // Tombol navigasi
+                prevBtn.addEventListener("click", () => showSlide(index - 1));
+                nextBtn.addEventListener("click", () => showSlide(index + 1));
+
+                // Swipe di HP
+                let startX = 0;
+                slides.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+                slides.addEventListener("touchend", e => {
+                    let endX = e.changedTouches[0].clientX;
+                    if (startX - endX > 50) showSlide(index + 1);
+                    if (endX - startX > 50) showSlide(index - 1);
+                });
+
+                // Init pertama kali
+                showSlide(index);
+            });
+        </script>
+
+    </section>
+
+
+
+    <!-- Contact Part -->
+    <section class="contact-container offset" id="contact">
+        <div class="contact">
+            <!-- <div class="send-message">
+                <p class="title">
+                    Send A Message
+                </p>
+                <form class="message-form" action="" method="post">
+                    <input type="text" placeholder="Name *">
+                    <input type="email" placeholder="Email *">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button class="send-btn">Send Message</button>
+                </form>
+            </div> -->
+
+            <div class="in-touch">
+                <p class="title">Get In Touch</p>
+                <div class="contact-methods">
+                    <div class="method">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <div class="flex-col ">
+                            <p class="text-md">Phone :</p>
+                            <p class="sub text-sm">081226576820</p>
+                        </div>
+                    </div>
+
+                    <div class="method">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="flex-col ">
+                            <p class="text-md">Email :</p>
+                            <p class="sub text-sm">meynaanjarnilawati@mail.ugm.ac.id</p>
+                        </div>
+                    </div>
+
+                    <div class="method">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="flex-col ">
+                            <p class="text-md">Address :</p>
+                            <p class="sub text-sm">Bantul, Daerah Istimewa Yogyakarta, Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icons prime-color">
+                    <a href="https://www.linkedin.com/in/meyna-anjar-nilawati" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:meynaanjarnilawati@mail.ugm.ac.id">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="https://instagram.com/youcancallme.mey" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Meynaan" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Part -->
+    <footer>
+        <span>
+            &copy; 2025 Created with <i class="fa-solid fa-heart red p-5"></i> Mynx
+        </span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
